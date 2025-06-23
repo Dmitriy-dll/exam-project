@@ -1,0 +1,13 @@
+.welcome-main{
+    margin-top: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.welcome-col1, .welcome-col2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}

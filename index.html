@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href=""><img class="header-logo" src="img/logo.png" alt=""></a>
+        <nav class="nav">
+            <ul>
+                <li><a href=""><span>services</span></a></li>
+                <li><a href=""><span>about us</span></a></li>
+                <li><a class="header-itworks " href=""><span>how it works</span></a></li>
+            </ul>
+        </nav>
+        <a class="header-phone " href=""><img src="img/phone.png" alt=""></a>
+        <div class="header-btns">
+        <button class="header-btn1">SIGN IN</button>
+        <button class="header-btn2">ORDER</button>
+        </div>
+        <div class="burger">
+            <span></span>
+        </div>
+    </header>
+
+    <div class="place-order">
+        <div class="place-order-info">
+            <h3>BlueEssaySite.net -</h3>
+            <h4>expert help for custom Written</h4>
+            <div class="progress-wrapper">
+                <div class="progress-track">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+            <p>On the other hand, we denounce with righteous indig- <br> nation and dislike men who are so beguiled and
+                de- <br> moralized</p>
+            <button class="place-order-btn">place order</button>
+        </div>
+        <div class="place-order-img">
+            <img src="img/girl.png" alt="">
+        </div>
+
+        <div class="order-menu">
+            <div class="order-col1">
+            <div class="order-menu-el">
+                <span>Type of paper</span>
+                <select name="Placeholder text" id="">
+                    <option value="">Placeholder text</option>
+                    <option value="">321</option>
+                    <option value="">213</option>
+                </select>
+            </div>
+            <div class="order-menu-el">
+                <span>Writer level</span>
+                <select name="Placeholder text" id="">
+                    <option value="">High school</option>
+                    <option value="">321</option>
+                    <option value="">213</option>
+                </select>
+            </div>
+            </div>
+            <div class="order-col2">
+            <div class="order-menu-el">
+                <span>Urgency</span>
+                <select name="Placeholder text" id="">
+                    <option value="">21 days</option>
+                    <option value="">321</option>
+                    <option value="">213</option>
+                </select>
+            </div>
+            <div class="counter-container">
+                <span class="number-pages">Number  pages</span>
+                <div class="counter">
+                    <button onclick="decrement()">−</button>
+                    <span id="pageCount">2</span>
+                    <button onclick="increment()">+</button>
+                </div>
+            </div>
+            </div>
+            <div class="order-menu-btn">
+                <button>Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="welcome-main">
+        <div class="welcome-col1">
+            <img class="welcome-img" src="img/01-img.png" alt="">
+        </div>
+        <div class="welcome-col2">
+            <h6>01  Welcome to Sitename</h6>
+            <h3>Do you need essay help from a good writing service?</h3>
+            <p class="welcome-p1">If you need to buy papers or custom essays, you have arrived at the ideal place! We offer guarantees that any essay work provided by our professional writing services will be entirely free of plagiarism and 100% freshly written. At BestEssayService.net, we make sure our customers are fully satisfied every time they use our custom term paper writing service.</p>
+            <p>Our essay and research paper writing services are provided by a large team of editing, writing and research specialists who can help you with all types of coursework, whether you have essays, term papers, research papers, theses or dissertations to complete. Our essay writers are able to help you with all subject matters for all education levels, no matter if you are a high school student or studying for a PhD or Master's degree.</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+
+        let count = 2;
+    const countSpan = document.getElementById("pageCount");
+
+    function increment() {
+      count++;
+      countSpan.textContent = count;
+    }
+
+    function decrement() {
+      if (count > 1) {
+        count--;
+        countSpan.textContent = count;
+      }
+    }
+    </script>
+</body>
+
+</html>

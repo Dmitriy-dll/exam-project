@@ -1,0 +1,21 @@
+{
+  "name": "exam-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "sass": "sass --watch scss:css --no-source-map",
+  "serve": "browser-sync start --server --files 'css/*.css, *.html, *.js'",
+  "dev": "concurrently \"npm run sass\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.89.2"
+  }
+}
