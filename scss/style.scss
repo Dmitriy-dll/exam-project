@@ -1,6 +1,10 @@
 @use "../scss/styles/header";
 @use "../scss/styles/place-order";
 @use "base/variables";
+@use "styles/welcome";
+@use './base/fonts';
+@use 'styles/advantages';
+@use 'styles/it-works.scss';
 
 * {
   margin: 0;

@@ -1,0 +1,269 @@
+@use '../base/variables';
+
+.advantages-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-color: variables.$L1-1;
+    background-image: url('../../img/icons_transparent.png');
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: inherit;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+        transition: transform 2s ease, filter 2s ease;
+        transform: scale(1);
+    }
+
+    &:hover::before {
+        transform: scale(1.05);
+        filter: brightness(1.1) blur(1px);
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.advantages-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 50;
+    margin-bottom: 40px;
+}
+
+.advantages-text h2 {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins-light";
+    margin-bottom: 10px;
+}
+
+.advantages-text h3 {
+    font-size: 33px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Poppins-med";
+}
+
+
+
+
+
+.advantages-blocks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.advantages-blocks h5 {
+    font-size: 17px;
+    color: #1e2021;
+    font-weight: 500;
+    font-family: "Poppins-med";
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 292px;
+}
+
+.advantages-blocks img {
+    width: 86px;
+}
+
+.advantages-blocks p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #51555a;
+    font-weight: 400;
+    font-family: "Poppins-light";
+    width: 266px;
+}
+
+
+
+.advantage-b1,
+.advantage-b2,
+.advantage-b3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 360px;
+    height: 310px;
+    background-color: #ffffff;
+    z-index: 50;
+}
+
+.advantage-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    margin-top: 50px;
+}
+
+.advantage-btn button {
+    width: 280px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: variables.$D2-1;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Poppins-med";
+    text-align: center;
+
+    &:hover {
+        background-color: #005bb5;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 91, 181, 0.4);
+    }
+
+    &:active {
+        background-color: #004999;
+        transform: translateY(1px);
+        box-shadow: 0 3px 6px rgba(0, 73, 153, 0.4);
+    }
+}
+
+
+
+@media (max-width:1170px) and (min-width:951px) {
+
+    .advantage-b1,
+    .advantage-b2,
+    .advantage-b3 {
+        width: 33%;
+        height: 270px;
+    }
+}
+
+
+@media (max-width:950px) {
+    .advantages-main {
+        height: 670px;
+    }
+
+    .advantages-blocks {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .advantages-blocks p {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .advantages-blocks img {
+        width: 65px;
+    }
+
+    .advantages-blocks h5 {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .advantages-text h2 {
+        font-size: 10px;
+    }
+
+    .advantages-text {
+        margin-bottom: 20px;
+    }
+
+    .advantage-btn {
+        margin-top: 30px;
+    }
+
+    .advantages-text h3 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:800px) {
+    .advantages-main {
+        height: 750px;
+    }
+
+    .advantages-blocks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .advantage-b1,
+    .advantage-b2,
+    .advantage-b3 {
+        width: 60%;
+        height: 170px;
+    }
+
+    .advantages-blocks h5 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:426px) {
+    .advantages-text h3 {
+        font-size: 15px;
+    }
+
+    .advantages-text h2 {
+        font-size: 9px;
+    }
+
+    .advantages-blocks img {
+        width: 50px;
+    }
+
+    .advantages-blocks p {
+        font-size: 8px;
+    }
+
+    .advantages-blocks h5 {
+        font-size: 10px;
+    }
+
+    .advantage-btn button {
+        width: 180px;
+        height: 40px;
+    }
+
+    .advantage-btn {
+        margin-top: 20px;
+    }
+
+    .advantage-b1,
+    .advantage-b2,
+    .advantage-b3 {
+        height: 180px;
+    }
+
+    .advantages-text {
+        margin-bottom: 12px;
+    }
+}

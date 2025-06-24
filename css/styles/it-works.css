@@ -1,0 +1,66 @@
+.it-works {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 300px;
+}
+
+.it-work-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.it-work-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.step1, .step2, .step3, .step4 {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step1 img, .step2 img, .step3 img, .step4 img {
+  width: 70px;
+}
+
+.it-works h2 {
+  font-size: 15px;
+  color: #0287c3;
+  font-weight: 400;
+  font-family: "Poppins-light";
+}
+
+.it-works h5 {
+  font-size: 33px;
+  color: #323538;
+  font-weight: 500;
+  font-family: "Poppins-med";
+}
+
+.it-work-main h3 {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #1e2021;
+  font-weight: 600;
+  font-family: "Poppins-semi";
+  text-align: center;
+}
+
+.it-work-main p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #51555a;
+  font-weight: 400;
+  font-family: "Poppins-light";
+  text-align: center;
+}

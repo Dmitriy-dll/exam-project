@@ -1,18 +1,41 @@
 @font-face {
-    font-family: 'Angeline';
-    src: url(../fonts/AngelineVintage.woff) format('woff'),
-     url(../fonts/AngelineVintage.woff2) format('woff2');
+  font-family: 'Angeline';
+  src: url('../fonts/AngelineVintage.woff2') format('woff2'),
+       url('../fonts/AngelineVintage.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Echoes';
-    src: url(../../fonts/EchoesSlabBlack.woff) format('woff'),
-     url(../../fonts/EchoesSlabBlack.woff2) format('woff2');
+  font-family: 'Echoes';
+  src: url('../fonts/EchoesSlabBlack.woff2') format('woff2'),
+       url('../fonts/EchoesSlabBlack.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url(../../fonts/RobotoRegular.woff) format('woff'),
-     url(../../fonts/RobotoRegular.woff2) format('woff2');
+  font-family: 'Roboto';
+  src: url('../../fonts/') format('woff2'),
+       url('../fonts/RobotoRegular.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../fonts/Poppins-Bold.ttf') format('woff2'),
+       url('../../fonts/Poppins-Bold.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins-light';
+  src: url('../../fonts/Poppins-Light.ttf') format('woff2'),
+       url('../../fonts/Poppins-Light.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins-semi';
+  src: url('../../fonts/Poppins-SemiBold.ttf') format('woff2'),
+       url('../../fonts/Poppins-SemiBold.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins-med';
+  src: url('../../fonts/Poppins-Medium.ttf') format('woff2'),
+       url('../../fonts/Poppins-Medium.ttf') format('woff');
+}
