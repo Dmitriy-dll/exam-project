@@ -1,0 +1,502 @@
+@use '../base/variables';
+@use '../base/fonts';
+
+.discounts {
+  width: 100%;
+  height: 480px;
+  background-image: url(../../img/04-bg.png);
+  background-color: variables.$L1-1;
+  background-size: contain;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+.discount-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.discount-text h2 {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Poppins-light";
+
+}
+
+.discount-text h5 {
+  font-size: 33px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Poppins-reg";
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.discount-text p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Poppins-med";
+  text-align: center;
+}
+
+.discount-grid {
+  position: absolute;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -45%;
+  height: fit-content;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.discount-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background: white;
+  color: #ff4a4a;
+  padding: 20px;
+  width: 55%;
+  height: 450px;
+}
+
+.discount-box h5 {
+  font-size: 35px;
+  line-height: 40px;
+  color: #f75e2e;
+  font-family: "Poppins";
+  text-align: center;
+  width: 100px;
+}
+
+.discount-box h6 {
+  font-size: 14px;
+  line-height: 22px;
+  color: #7f8286;
+  font-weight: 400;
+  font-family: "Poppins-light";
+  text-align: center;
+}
+
+.discount-box p {
+  font-size: 17px;
+  color: #0287c3;
+  font-weight: 600;
+  font-family: "Poppins-light";
+  text-align: center;
+}
+
+.promo-box {
+  background-color: variables.$L1-1;
+  width: 45%;
+  height: 450px;
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 15px;
+    border: 2px dashed variables.$D2-1;
+    border-radius: 25px;
+    pointer-events: none;
+  }
+}
+
+.dis1,
+.dis2,
+.dis3,
+.dis4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.disc-get {
+  margin: 0 auto;
+  width: 80%;
+  height: 55%;
+  position: relative;
+  margin-top: 30%;
+  background-color: variables.$D2-1;
+  border-radius: 25px;
+  border: 2px dashed #ffff;
+
+}
+
+
+
+.promobox-text {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.promobox-text h3 {
+  width: 220px;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Poppins-reg";
+  text-align: center;
+  margin-top: 5%;
+  z-index: 1000;
+}
+
+.disc-baloo {
+  position: absolute;
+  z-index: 50;
+  top: 120%;
+  left: 130%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 100;
+}
+
+.disc-baloo {
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  animation: balloonIdle 2.5s ease-in-out infinite;
+  top: 300px;
+  left: 300px;
+}
+
+.dis-sci {
+  position: absolute;
+  z-index: 50;
+  top: -5%;
+  left: -5%;
+  animation: rotateAround 15s linear infinite;
+}
+
+@keyframes rotateAround {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  24.9% {
+    transform: translate(295px, 0) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(270px, 10px) rotate(90deg);
+  }
+
+  49.9% {
+    transform: translate(270px, 260px) rotate(90deg);
+  }
+
+  50% {
+    transform: translate(270px, 260px) rotate(180deg);
+  }
+
+  74.9% {
+    transform: translate(0, 270px) rotate(180deg);
+  }
+
+  75% {
+    transform: translate(0, 270px) rotate(270deg);
+  }
+
+  99.9% {
+    transform: translate(0px, 0px) rotate(270deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+@keyframes balloonIdle {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-3px) rotate(2deg);
+  }
+
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(-3px) rotate(-2deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.disc-get-text-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.disc-get-text-main h4 {
+  width: 200px;
+  font-size: 62px;
+  line-height: 57px;
+  color: #e2f55d;
+  font-family: "Poppins";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.disc-get-text-main h6 {
+  width: 266px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Poppins-light";
+  text-align: center;
+}
+
+
+.disc-get p {
+
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 40px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Poppins-semi";
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 0;
+}
+
+.cross-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.cross-lines::before,
+.cross-lines::after {
+  content: "";
+  position: absolute;
+  background-color: #e0e0e0;
+}
+
+.cross-lines::before {
+  width: 85%;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cross-lines::after {
+  height: 85%;
+  width: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.disc-star {
+  position: absolute;
+  z-index: 1;
+  right: -5%;
+}
+
+@media (max-width:1376px) {
+  .discount-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .discount-box {
+    width: 550px;
+  }
+
+  .discount-grid {
+    width: 650px;
+  }
+
+  .promo-box {
+    width: 85%;
+  }
+
+  .dis-sci {
+    animation: none;
+  }
+}
+
+@media (max-width:1154px) {
+  .discount-box {
+    width: 500px;
+  }
+
+  .discount-grid {
+    width: 600px;
+  }
+}
+
+@media (max-width:1073px) {
+  .discount-box h5 {
+    font-size: 28px;
+  }
+
+  .discount-box h6 {
+    font-size: 14px;
+  }
+
+  .discount-box p {
+    font-size: 12px;
+  }
+
+  .promo-box {
+    height: 370px;
+  }
+
+  .discount-grid {
+    height: 370px;
+    width: 500px;
+  }
+
+  .discount-box {
+    height: 370px;
+    width: fit-content;
+  }
+
+  .disc-get-text-main h4 {
+    font-size: 35px;
+  }
+
+
+  .promobox-text h3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width:959px) {
+  .discount-grid {
+    width: 100%;
+    height: 340px;
+    bottom: -25%;
+  }
+
+  .discount-box {
+    width: 50%;
+  }
+
+  .promo-box {
+    width: 50%;
+  }
+
+  .discount-box h5 {
+    font-size: 23px;
+  }
+
+  .promobox-text h3 {
+    font-size: 11px;
+  }
+
+  .disc-star {
+    width: 60px;
+  }
+
+  .disc-baloo {
+    width: 50px;
+    height: 60px;
+    top: 250px;
+    left: 280px;
+  }
+}
+
+@media (max-width:505px) {
+  .discounts {
+    margin-top: 400px;
+  }
+
+  .discount-grid {
+    display: flex;
+    flex-direction: column;
+    bottom: -15%;
+  }
+
+  .promo-box {
+    width: 100%;
+    height: 300px;
+  }
+
+  .discount-box {
+    width: 100%;
+    margin-top: 550px;
+    height: fit-content;
+  }
+
+  .promo-box {
+    margin: 0;
+    height: 500px;
+  }
+
+  .disc-get {
+    margin-top: 60px;
+    padding: 20px;
+  }
+
+
+  .disc-get p {
+    margin-top: 15px;
+  }
+
+  .disc-get h4 {
+    margin-bottom: 0px;
+  }
+
+  .promobox-text h3 {
+    width: 100%;
+    margin-bottom: 0;
+    top: 100px;
+  }
+
+  .disc-get-text-main h6 {
+    margin-bottom: 80px;
+  }
+
+  .disc-baloo {
+    display: none;
+
+  }
+
+  .disc-star {
+    right: -10px;
+  }
+}

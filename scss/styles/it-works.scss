@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 300px;
+    height: 550px;
 }
 
 .it-work-main{
@@ -25,7 +25,7 @@
 }
 
 .step1, .step2, .step3, .step4{
-    width: 240px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +33,7 @@
 
 .step1 img, .step2 img, .step3 img, .step4 img{
     width: 70px;
+    margin-bottom: 30px;
 }
 
 .it-works h2{
@@ -56,6 +57,7 @@ color: #1e2021;
 font-weight: 600;
 font-family: "Poppins-semi";
 text-align: center;
+margin-bottom: 20px;
 }
 
 .it-work-main p{
@@ -67,3 +69,70 @@ font-family: "Poppins-light";
 text-align: center;
 }
 
+.it-work-row1, .it-work-row2{
+    display: flex;
+    gap: 40px;
+}
+
+
+
+@media (max-width:950px){
+    .it-works{
+        height: 700px;
+    }
+    .it-work-main{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.it-work-arrow{
+        display: none;
+    }
+
+.it-work-text{
+    margin-top: 30px;
+}
+}
+
+@media (max-width:500px){
+
+    .it-works{
+        margin-top: 50px;
+    }
+
+    .it-work-text{
+        padding-top: 200px;
+    }
+    .it-works h2{
+        font-size: 10px;
+    }
+
+    .it-works h5{
+        font-size: 18px;
+    }
+
+    .it-work-text{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.step1 img, .step2 img, .step3 img, .step4 img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.step1, .step2, .step3 , .step4 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.it-works h3{
+    margin-bottom: 10px;
+}
+
+.it-work-text h5{
+    font-size: 10px;
+    font-size: 15px;
+}
+}

@@ -1,0 +1,81 @@
+@use '../base/variables';
+@use '../base/fonts';
+
+
+
+
+.testimonials{
+    width: 100%;
+    margin-top: 400px;
+}
+
+.testi-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testi-text h2{
+    height: 12px;
+font-size: 15px;
+color: variables.$D2-1;
+font-weight: 400;
+font-family: "Poppins-light";
+}
+
+.testi-text h5{
+font-size: 33px;
+color: #323538;
+font-weight: 500;
+font-family: "Poppins";
+text-align: center;
+}
+
+.testi-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testi-content{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testi-content img{
+    width: 50px;
+}
+
+.testi-content h4{
+font-size: 14px;
+line-height: 22px;
+color: #51555a;
+font-weight: 300;
+font-family: "Poppins-light";
+text-align: center;
+}
+
+.testi-content h5{
+font-size: 17px;
+color: #0287c3;
+font-weight: 600;
+font-family: "Poppins-med";
+text-align: center;
+}
+
+.testi-content p{
+
+font-size: 13px;
+color: #a3a6a9;
+font-weight: 300;
+font-family: "Poppins-light";
+text-align: center;
+}
+
+.testi-arrow-s{
+    rotate: 180deg;
+}
