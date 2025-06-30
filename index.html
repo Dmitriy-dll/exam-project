@@ -256,6 +256,98 @@
     </div>
     </div>
 
+    <div class="footer">
+        <div class="footer-top">
+            <a href=""><img class="footer-logo" src="img/logo.png" alt=""></a>
+        <nav class="nav-footer">
+            <ul>
+                <li><a href=""><span>home</span></a></li>
+                <li><a href=""><span>about us</span></a></li>
+                <li><a class="" href=""><span>order now</span></a></li>
+                <li><a href=""><span>disclaimer</span></a></li>
+                <li><a href=""><span>why us</span></a></li>
+                <li><a class="" href=""><span>contacts</span></a></li>
+                <li><a class="" href=""><span>blog</span></a></li>
+            </ul>
+        </nav>
+        <div class="burger-footer">
+            <span></span>
+        </div>
+        </div>
+                <hr class="hr-foot">
+        <div class="footer-main">
+            <div class="footer-sec1">
+                <h3>Section number1</h3>
+                <p>But I must expicin to you how
+Mistaken ided ot denouncing
+Praising pain was born
+Account of the system
+Great explorer of the truth
+No one rejects, dislikes
+Mistaken idea of denouncing
+Praising pain was born</p>
+            </div>
+            <div class="footer-sec2">
+                <h3>Section number2</h3>
+                <p>But I must expicin to you how
+Mistaken ided ot denouncing
+Praising pain was born
+Account of the system
+Great explorer of the truth
+No one rejects, dislikes
+Mistaken idea of denouncing
+Praising pain was born</p>
+            </div>
+            <div class="footer-sec3">
+                <h3>Section number3</h3>
+                <p>But I must expicin to you how
+Mistaken ided ot denouncing
+Praising pain was born
+Account of the system
+Great explorer of the truth
+No one rejects, dislikes
+Mistaken idea of denouncing
+Praising pain was born</p>
+            </div>
+            <div class="footer-sec4">
+                <h3>Section number4</h3>
+                <p>But I must expicin to you how
+Mistaken ided ot denouncing
+Praising pain was born
+Account of the system
+Great explorer of the truth
+No one rejects, dislikes
+Mistaken idea of denouncing
+Praising pain was born</p>
+            </div>
+        </div>
+         <hr class="hr-foot">
+        <footer>
+            <h5>Copyright В© 2017 BlueEssaySite.net  All rights reserved.</h5>
+            <ul>
+                <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="img/twitter.png" alt=""></a></li>
+                <li><a href=""><img src="img/pinterest.png" alt=""></a></li>
+                <li><a href=""><img src="img/google-plus.png" alt=""></a></li>
+            </ul>
+            
+            <div class="footer-free-m">
+                <img class="footer-free-img" src="img/footer-phone.png" alt="">
+            <div class="footer-free">
+                <h6>Toll free:</h6>
+                <span>+ 3 044 111 2732</span>
+            </div>
+            </div>
+            <div class="footer-email-m">
+            <img class="footer-free-email" src="img/footer-email.png" alt="">
+            <div class="footer-email">
+                <h6>Email:</h6>
+                <span>blueessaysite@gmail.com</span>
+            </div>
+            </div>
+        </footer>
+    </div>
+
     <script>
         document.querySelector('.burger').addEventListener('click', function () {
             this.classList.toggle('active');
@@ -274,6 +366,27 @@
             if (count > 1) {
                 count--;
                 countSpan.textContent = count;
+            }
+        }
+    </script>
+    <script>
+        document.querySelector('.burger-footer').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.nav-footer').classList.toggle('open');
+        })
+
+        let count1 = 2;
+        const count1Span = document.getElementById("pageCount");
+
+        function increment() {
+            count++;
+            count1Span.textContent = count1;
+        }
+
+        function decrement() {
+            if (count1 > 1) {
+                count1--;
+                count1Span.textContent = count1;
             }
         }
     </script>
